@@ -25,3 +25,6 @@ if l>1 and b>1:
     for z in range(l):
         print(s,end='')
         time.sleep(0.4)
+
+else:
+    print("Length and Breadth should be greater than 1")
