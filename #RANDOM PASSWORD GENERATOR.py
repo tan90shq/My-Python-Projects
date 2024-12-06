@@ -7,7 +7,7 @@ alphaS='abcdefghijklmnopqrstuvwxyz'
 num='1234567890'
 smybl='@#$._'
 
-length=int(input("Enter length of password (b/w 4 to 17) : "))
+length=int(input("Enter length of password (4 to 17) : "))
 if length<4 or length>17:
     print("\nEnter valid password length")
     exit()
