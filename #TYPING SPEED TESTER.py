@@ -49,7 +49,7 @@ total_char=0
 total_miss=0
 
 if diff=='easy':
-    queL.extend(random.choices(sent_easy,k=1)+random.choices(sent_med,k=0))
+    queL.extend(random.choices(sent_easy,k=3)+random.choices(sent_med,k=2))
 elif diff=='mid':
     queL.extend(random.choices(sent_easy,k=1)+random.choices(sent_med,k=3)+random.choices(sent_hard,k=1))
 elif diff=='hard':
