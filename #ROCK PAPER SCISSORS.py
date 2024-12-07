@@ -52,11 +52,11 @@ choices1=['r','p','s']
 r,p,s=100,100,100
 exit0=''
 score_board={"User":0,"Computer":0}
-userW,compW=0,0
 
 while exit0!='e':
     print("\nLets Play!")
     print("(Winner decided on the basis of Best of Three games.)\n")
+    userW,compW=0,0
     time.sleep(1)
     for i in range(3):
         user=input("\nChoose:-\n'r' for ROCK.\n'p' for PAPER.\n's'for scissors.\n==>  ").strip().lower()
