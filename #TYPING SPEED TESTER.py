@@ -7,8 +7,13 @@ sent_easy = [
     'The sky turns orange during sunset.',
     'Books take us to different worlds.',
     'Children love playing in the rain.',
-    'A smile can brighten someone\'s day.',
-    'Music makes people feel happy or relaxed.'
+    'A smile can brighten someone’s day.',
+    'Music makes people feel happy or relaxed.',
+    'Flowers bloom beautifully in the spring.',
+    'Laughter often spreads quickly in a group.',
+    'A cat purring softly feels comforting.',
+    'Clouds sometimes look like shapes or animals.',
+    'Drawing with crayons can be fun for everyone.'
 ]
 
 sent_med = [
@@ -16,16 +21,27 @@ sent_med = [
     'A quiet forest can feel peaceful yet mysterious at the same time.',
     'Watching a bird build its nest can be surprisingly calming.',
     'The smell of freshly baked bread often reminds people of home.',
-    'Taking a walk under the stars can inspire deep thoughts.'
+    'Taking a walk under the stars can inspire deep thoughts.',
+    'The crackling of a fireplace makes winter evenings cozy.',
+    'Writing letters to friends can feel more personal than sending texts.',
+    'An old photo album can bring back memories long forgotten.',
+    'A gentle breeze on a hot day feels like nature’s gift.',
+    'Trying something new often brings unexpected happiness.'
 ]
 
 sent_hard = [
     'Writing a poem often involves balancing emotions with rhythm.',
-    'A single decision can ripple through time, changing a person\'s life forever.',
+    'A single decision can ripple through time, changing a person’s life forever.',
     'The contrast between urban chaos and rural calm is fascinating to observe.',
     'Philosophy challenges people to question the nature of reality itself.',
-    'The complexities of human emotions are often reflected in art and literature.'
+    'The complexities of human emotions are often reflected in art and literature.',
+    'The delicate balance between freedom and responsibility shapes our choices.',
+    'The vastness of the ocean can make one feel both awestruck and insignificant.',
+    'Understanding another person’s perspective requires empathy and patience.',
+    'Time often feels slow in moments of pain but flies in moments of joy.',
+    'Creativity thrives in spaces where curiosity and courage meet.'
 ]
+
 time.sleep(1)
 art=r"""
           ______          _                ____                __    ______        __         
