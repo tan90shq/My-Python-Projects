@@ -78,7 +78,6 @@ listMAIN=[list1,list2,list3,list4,list5,list6,list7,list8,list9]
 listMAIN_1=[list01,list02,list03,list04,list05,list06,list07,list08,list09]
 
 layout1=0
-abc=0
 count=0
 
 
@@ -117,9 +116,9 @@ def count_checker():
         list_temp1.clear()
         list_temp2.clear()
 
-    abc=max(list_temp3)
+    count=max(list_temp3)
     list_temp3.clear()
-    return abc
+    return count
 
 
 sudoku="""
@@ -159,11 +158,11 @@ while True:
 
     layout=num_setter(list1,num,layout)
     for i in range(1,9):
-        while abc!=1:      
+        while count!=1:      
             list1=listMAIN[i]
             layout=num_setter(list1,num,layout)
-            abc=count_checker()
-        abc=0
+            count=count_checker()
+        count=0
     
     diff=input("\nEnter the difficulty (easy/mid/hard) : ").strip().lower()
     if diff not in ['easy', "mid", "hard"]:
