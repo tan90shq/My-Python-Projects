@@ -101,17 +101,17 @@ def num_setter(list1,num,layout):
 
 
 def count_checker():
+    list_temp1=[]
+    list_temp2=[]
+    list_temp3=[]
     for a in range(9):
-        
         list_temp1=listMAIN_1[a].copy()
-        list_temp2=[]
         for b in list_temp1:
             if layout[b]!='_':
                 list_temp2+=[layout[b]]
         list_temp1.clear()
         for c in list_temp2:
             list_temp1+=[list_temp2.count(c)]
-        list_temp3=[]
         list_temp3+=[max(list_temp1)]
         list_temp1.clear()
         list_temp2.clear()
@@ -155,19 +155,38 @@ def soduku_randomizer(layout,layout1,empty_spc):
     return layout1
 
 while True:
-
-    layout=num_setter(list1,num,layout)
-    for i in range(1,9):
-        while count!=1:      
-            list1=listMAIN[i]
-            layout=num_setter(list1,num,layout)
-            count=count_checker()
-        count=0
-    
+    time.sleep(1)
     diff=input("\nEnter the difficulty (easy/mid/hard) : ").strip().lower()
     if diff not in ['easy', "mid", "hard"]:
         print("\nPlease choose valid difficulty.\n")
         exit()
+    time.sleep(1)
+    print("\nPlease Wait... (can take upto 30sec)")
+    list1=listMAIN[0]
+    layout=num_setter(list1,num,layout)
+    a=time.time()
+    d=0
+    for i in range(1,9):
+        while count!=1:
+            b=time.time()
+            c=math.ceil(b-a)
+            if c==5 and d==0:
+                print("\nSetting Things Up...")
+                d+=1
+            if c==12 and d==1:
+                print("\nLoading Frameworks...")
+                d+=1
+            if c==19 and d==2:
+                print("\nInitializing Resources...")
+                d+=1
+            if c==26 and d==3:
+                print("\nFinishing Up...")
+                d+=1
+            list1=listMAIN[i]
+            layout=num_setter(list1,num,layout)
+            count=count_checker()
+        count=0
+
 
     if diff=='easy':
         layout1=soduku_randomizer(layout,layout1,3)
